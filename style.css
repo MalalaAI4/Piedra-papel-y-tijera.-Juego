@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa';
+    color: rgb(113, 27, 5);
+    height: 100vh;
+    background-color: rgb(255, 228, 133);
+}
+
+
+
+.puntajes {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.puntajes h2 {
+    font-size: 40px;
+}
+
+.puntajes p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.opciones {
+    display: flex;
+    gap: 2rem;
+}
+
+.tablero button {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(113, 27, 5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tablero button img {
+    width: 100%;
+}
+
+.tablero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tablero button:hover {
+    background-color: rgb(189, 46, 10);
+    border-color: white;
+}
+
+.tablero button:focus {
+    outline: 0;
+}
+
+.final {
+    text-align: center;
+    padding: 30px;
+}
+
+.resultado {
+    margin-bottom: 20px;
+}
+
+.manos img{
+    width: 250px;
+}
+
+.manos,
+.opciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768){
+    .manos img{
+        width: 150px;
+    }
+
+    .puntajes h2 {
+        font-size: 18px;
+    }
+
+    .resultado{
+        font-size: 28px;
+    }
+
+    .tablero button{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0px);
+    }
+
+    15% {
+        transform: translateY(-25px);
+    }
+
+    25% {
+        transform: translateY(0px);
+    }
+
+    35% {
+        transform: translateY(-25px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    65% {
+        transform: translateY(-25px);
+    }
+
+    75% {
+        transform: translateY(0px);
+    }
+
+    85% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Juego</title>
+</head>
+
+<body>
+    <section>
+        <div class="puntajes">
+            <div class="puntaje_usuario">
+                <h2>USUARIO</h2>
+                <p>0</p>
+            </div>
+            <div class="puntaje_pc">
+                <h2>COMPUTADOR</h2>
+                <P>0</P>
+            </div>
+        </div>
+
+        <div class="tablero">
+            <div class="manos">
+                <img class="mano_usuario" src="assets/piedra_ada.png" alt="opción a elegir usuario">
+                <img class="mano_pc" src="assets/piedra_computadora.png" alt="opción a elegir computador">
+            </div>
+
+            <!-- parte de las opciones -->
+
+            <h2 class="resultado">Seleccione una opción</h2>
+            <div class="opciones">
+                <button class="piedra">
+                    <img class="mano_usuario" src="assets/piedra_ada.png" alt="elegir piedra">
+                </button>
+
+                <button class="papel">
+                    <img src="assets/papel_ada.png" alt="elegir piedra">
+                </button>
+
+                <button class="tijera">
+                    <img src="assets/tijera_ada.png" alt="elegir piedra">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- inicio footer -->
+    <footer class="final">
+        <p>&copy; created by Malala.ai 2023</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
